@@ -1,0 +1,55 @@
+.user p:nth-child(1) {
+  color: #2F80ED;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.user ul {
+  margin-bottom: 1rem;
+  list-style: none;
+
+}
+
+.user_card {
+  padding: 1rem;
+  margin-bottom: 2rem;
+  border-radius: 5px;
+  background: #fefefe;
+  box-shadow: 2px 0px 12px 7px rgba(0, 0, 0, 0.1);
+
+  h1 {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  img {
+    width: 30px;
+  }
+}
+
+.open-modal {
+  border: none;
+  background: transparent;
+  padding: 2px 5px;
+  cursor: pointer;
+}
+
+.close-modal-user {
+  content: "";
+  position: absolute;
+  padding: 10px 15px;
+  font-size: 20px;
+  border-radius: 50%;
+  background: #bec0bf;
+  cursor: pointer;
+  color: #fff;
+  border: none;
+  top: -4.5rem;
+  right: -30px;
+}
+
+.close-modal-user:hover {
+  background: #999;
+}
