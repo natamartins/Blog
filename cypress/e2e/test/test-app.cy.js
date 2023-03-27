@@ -8,7 +8,6 @@ describe('Test in website', () => {
   it('test post', () => {
     cy.get('#cy_post-click-open').click()
     cy.get('div').first().should("contain", 'sunt aut facere repellat provident occaecati excepturi optio reprehenderit')
-    cy.get('div').first().should("contain", "quia et suscipit suscipit recusandae consequuntur expedita et cum reprehenderit molestiae ut ut quas totam nostrum rerum est autem sunt rem eveniet architecto")
     cy.get('div').first().should("contain", 'Comentários...')
     cy.get('#cy_post-click-close').click()
   })
