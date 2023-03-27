@@ -21,7 +21,7 @@ const Index = ({ post }) => {
       </button>
       <div className='comment'>
         {
-          modal && <Comments comment={post} ID={id} img={Img} close={setModal} />
+          modal && <Comments comment={post} ID={id} close={setModal} />
         }
       </div>
     </div>

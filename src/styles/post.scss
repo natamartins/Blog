@@ -15,6 +15,11 @@
   }
 }
 
+.card_post:nth-child(1) {
+  position: absolute;
+  top: -14rem;
+}
+
 .card_post b {
   color: #2F80ED;
 }
@@ -51,38 +56,9 @@
   color: #999;
 }
 
-.post_comment-item {
-  grid-column: 1/3;
-  background: #fff;
-  box-shadow: 2px 0px 12px 5px rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
-  padding: 1rem;
-  position: absolute;
-  top: -14rem;
-
-  b {
-    color: #2F80ED;
-  }
-
-  h1 {
-    margin-bottom: 10px;
-  }
-
-  p {
-    margin-bottom: 20px;
-  }
-}
-
 @media (max-width: 55rem) {
-  .post_comment-item {
-    padding: 10px;
-    top: -20rem;
-    grid-column: 1/1;
-  }
-}
-
-@media (max-width: 470px) {
-  .post_comment-item {
-    top: -23rem;
+  .card_post:nth-child(1) {
+    top: -18rem;
+    margin-right: 1rem;
   }
 }

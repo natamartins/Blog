@@ -3,11 +3,9 @@ import { useFetch } from "./hooks/useFetch"
 
 import Post from "./pages/PostBlog/Post"
 import Users from "./pages/Users/Users"
-import CardMock from './components/CardMock/Index'
 import Img from './assets/Comment.svg'
 
 function App() {
-  const [modal, setModal] = useState(null)
 
   return (
     <>
@@ -21,20 +19,6 @@ function App() {
         </div>
       </header>
       <section className="app">
-        <div className="post_comment-item">
-          <b>Post</b>
-          <h1>sunt aut facere repellat provident occaecati excepturi optio reprehenderit</h1>
-          <p> quia et suscipit suscipit recusandae consequuntur expedita et cum reprehenderit molestiae ut ut quas totam nostrum rerum est autem sunt rem eveniet architecto</p>
-          <button className="open-modal" onClick={() => setModal(true)}>
-            <img src={Img} alt="" />
-            Comentários...
-          </button>
-          <div className="comment" >
-            {
-              modal && <CardMock close={setModal} />
-            }
-          </div>
-        </div>
         <Post />
         <Users />
       </section>

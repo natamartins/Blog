@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Index = ({ user, close, img }) => {
+const Index = ({ user, close }) => {
 
   return (
     <div className='user_modal' >
