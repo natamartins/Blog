@@ -1,14 +1,7 @@
-// .user_card-modal {
-//   position: fixed;
-//   top: 0;
-//   bottom: 0;
-//   left: 0;
-//   background: rgba(0, 0, 0, 0.7);
-//   z-index: 999;
-// }
-
 .user_modal {
   position: relative;
+  padding: 1rem;
+  animation: fadeInDown .3s forwards;
 
   a {
     color: #000;

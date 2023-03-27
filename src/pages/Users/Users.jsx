@@ -6,7 +6,7 @@ const Users = () => {
 
   return (
     <div id='user' className='user'>
-      <p>Assinantes</p>
+      <p>User</p>
       {
         data.map(user => (
           <CardUser user={user} key={user.id} />

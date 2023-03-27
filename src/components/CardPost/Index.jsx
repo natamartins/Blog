@@ -15,7 +15,7 @@ const Index = ({ post }) => {
       <b>Post</b>
       <h1>{post.title}</h1>
       <p>{post.body}</p>
-      <button className='open-modal' onClick={getId}>
+      <button className='open-modal' onClick={getId} id="cy_post-click-open">
         <img src={Img} alt="logo of comment" />
         Comentários...
       </button>

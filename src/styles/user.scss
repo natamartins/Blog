@@ -12,7 +12,6 @@
 }
 
 .user_card {
-  padding: 1rem;
   margin-bottom: 2rem;
   border-radius: 5px;
   background: #fefefe;
@@ -36,6 +35,11 @@
   cursor: pointer;
 }
 
+.user_btn {
+  padding: 1rem;
+}
+
+
 .close-modal-user {
   content: "";
   position: absolute;
@@ -46,10 +50,23 @@
   cursor: pointer;
   color: #fff;
   border: none;
-  top: -4.5rem;
-  right: -30px;
+  top: -5.5rem;
+  right: -20px;
 }
 
 .close-modal-user:hover {
   background: #999;
+}
+
+
+@media (max-width: 55rem) {
+  .user_card {
+    max-width: 20rem;
+    margin: auto;
+    margin-bottom: 2rem;
+  }
+
+  .user p:nth-child(1) {
+    text-align: center;
+  }
 }

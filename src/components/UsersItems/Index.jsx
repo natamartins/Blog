@@ -2,10 +2,9 @@ import React from 'react'
 
 const Index = ({ user, close, img }) => {
 
-  console.log(user)
   return (
-    <div className='user_modal'>
-      <button className='close-modal-user' onClick={() => close(!true)}>X</button>
+    <div className='user_modal' >
+      <button id='cy_user-click-close' className='close-modal-user' onClick={() => close(!true)}>X</button>
       <p>Email: {user.email}</p>
       <p>Número: {user.phone}</p>
       <a href={user.website}>website</a>
